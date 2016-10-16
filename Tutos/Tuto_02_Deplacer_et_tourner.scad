@@ -11,7 +11,6 @@
 cube([20,20,20]);
 
 // Après avoir écrit l'instruction, appuyez sur F5 ou bien cliquez sur l'option "Compile" du menu "Design" de OpenSCAD. Vous avez maintenant votre cube qui s'affiche. 
-
 // D'abord nous allons faire en sorte que le cube soit centré dans l'origine. Pour cela, remarquez que la commande cube accepte un paramètre qui s'appelle "center" qui par défaut n'est pas vrai (on dit que sa valeur par défaut est "false"). Passez ce paramètre à "true", comme suit :
 
 cube( [ 20, 20, 20], center = true);
@@ -31,7 +30,7 @@ translate([50,0,0])
 
 // Voyons maintenant comment marchent les rotations, c'est très similaire à ce qu'on a vu pour la translation.
 
-// Nous partirons maintenant d'un cube, différent de celui de toute à l'heure. 
+// Nous partirons maintenant d'une pièce différente de celle de toute à l'heure. 
 
 cube([ 20, 20, 10], center = true);
 
@@ -39,9 +38,30 @@ cube([ 20, 20, 10], center = true);
 
 // Comme toute à l'heure, le paramètre center=true, nous permet de centrer le pavé à l'origine. 
 
-// Pour le tourner nous utiliserons la commande rotate. Par exemple, pour tourner de 45° autour de l'axe Z on va faire 
+// Pour tourner notre pièce nous utiliserons la commande rotate. Par exemple, pour tourner de 45° autour de l'axe Z on va faire 
 
 rotate([0,0,45])
   cube([ 20, 20, 10], center = true);
 
 // Dans OpenSCAD les angles sont toujours donnés en degrés. Après avoir appuyé sur F5, vous pouvez voir que le pavé à été tourné. 
+
+// Faisons tourner maintenant le cube que nous avions déplacé toute à l'heure. Pour cela rajoutons une instruction avec rotate au début. Par exemple, pour tourner de 30° autour de l'axe Z, écrivez :
+
+rotate([0,0,30])
+  translate([50,0,0])
+    cube([20,20,20],center=true);
+
+// Remarquez bien que ce rotate s'applique au cube que nous avions déjà, c'est à dire que le cube centré à l'origine est d'abord deplacé le long de l'axe X et seulement en suite il est tourné autour de l'axe Z.
+
+// Pour finir ce tutoriel, ajoutez des commentaire à votre fichier pour le documenter. En règle générale, c'est bien de documenter les codes qu'on réalise.
+
+//-- Exemple de translation et rotation
+
+//-- Translation et rotation d'un cube
+rotate([ 0, 0, 30])
+  translate([ 50, 0, 0])
+    cube([ 20, 20, 20], center=true);
+
+//-- Rotation d'un pavé
+rotate([ 0, 0, 45])
+  cube([ 20, 20, 10], center = true);
