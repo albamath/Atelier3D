@@ -20,11 +20,13 @@ cube([10,10,10]);
 
 // Une fois le cube défini, appuyez sur la touche F5 ou naviguez jusqu'a sous-menu "Compile" du menu "Design". 
 
-// Le cube que vous aviez défini toute à l'heure apparaît maintenant dessiné par OpenSCAD.
+// Le cube que vous venez de définir apparaît maintenant dessiné par OpenSCAD.
 
-// Vous pouvez zoomer et dezoomer en faisant tourner la mollette de la souris.
+// Vous pouvez zoomer et dezoomer la vue en faisant tourner la mollette de la souris.
 
-// Avec le clic gauche de la souris vous pouvez tourner le point de vue autour de l'origine. Avec le clic du milieu, vous déplacez votre point de vue ou viewport dans l'espace. 
+// Avec le clic gauche de la souris vous pouvez tourner la vue autour de l'origine.
+
+// Avec le clic du milieu, vous déplacez votre point de vue ou viewport dans l'espace. 
 
 // Lors de la conception il est souvent utile de bien reperer nos axes de coordonnées. On va donc lres afficher. Appuyez simultanémentsur les touches Ctrl et 2 ou bien cliquez sur l'option "Show Axes" du menu "View" d'OpenSCAD. 
 
@@ -38,4 +40,4 @@ cube([10,10,10]);
 
 // Maintenant, imaginons que vous voulez déjà imprimer la pièce que vous venez de faire dans une imprimante 3D. A fin d'exporter vers un format de fichier convenable à l'impression 3D, appuyez sur la touche F6 ou bien cliquez sur l'option "Compile and render" du menu "Design" d'OpenScad.
 
-//Maintenant votre pièce est prête à être exportée. Pour l'exporter, allez dans l'option "Export as STL..." du menu "File" de OpenSCAD.
+//Maintenant votre pièce est prête à être exportée. Pour l'exporter, allez dans l'option "Export as STL..." du menu "File" de OpenSCAD. 
